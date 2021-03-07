@@ -15,9 +15,9 @@ public class Lista3Atividade1For {
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
 		DecimalFormat duasCasas = new DecimalFormat();
-		int salario=0,filhos=0,somaSalario=0,somaFilhos=0, percentual=0;
-		int mediaSalario=0,mediaFilhos=0,maiorSalario=0;
-		final int habitantes = 20;
+		double salario=0,filhos=0,somaSalario=0,somaFilhos=0, percentual=0;
+		double mediaSalario=0,mediaFilhos=0,maiorSalario=0;
+		final int habitantes = 2;
 		
 		for(int x=1; x<=habitantes; x++) {
 			System.out.println("Olá qual o seu salário?");
@@ -38,7 +38,8 @@ public class Lista3Atividade1For {
 		
 		mediaSalario = (somaSalario / habitantes);
 		mediaFilhos = (somaFilhos / habitantes);
-		percentual = ((percentual * 100)/habitantes);
+		percentual=(percentual/habitantes)*100;
+		// OU também podemos usar: percentual = ((percentual * 100)/habitantes);
 				
 		System.out.println("A média salarial da população é de: " + duasCasas.format(mediaSalario) + "R$\n");
 		System.out.println("A média de número de filhos é de: " + duasCasas.format(mediaFilhos) + "\n");
