@@ -17,7 +17,7 @@ public class Lista3Atividade1For {
 		DecimalFormat duasCasas = new DecimalFormat();
 		double salario=0,filhos=0,somaSalario=0,somaFilhos=0, percentual=0;
 		double mediaSalario=0,mediaFilhos=0,maiorSalario=0;
-		final int habitantes = 2;
+		final int habitantes = 20;
 		
 		for(int x=1; x<=habitantes; x++) {
 			System.out.println("Olá qual o seu salário?");
